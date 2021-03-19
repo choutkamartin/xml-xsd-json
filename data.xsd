@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studenti">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="student" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jmeno">
+                                            <xs:simpleType>
+                                                <!-- Jméno má restrikci, maximální počet znaků 30, minimální 1 -->
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="1" />
+                                                    <xs:maxLength value="30" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="prijmeni">
+                                            <xs:simpleType>
+                                                <!-- Příjmení má restrikci, maximální počet znaků 30, minimální 1 -->
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="1" />
+                                                    <xs:maxLength value="30" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="vek">
+                                            <xs:simpleType>
+                                                <!-- Věk má restrikci, může být pouze 18-26 -->
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="18" />
+                                                    <xs:maxInclusive value="26" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="stipendium">
+                                            <xs:simpleType>
+                                                <!-- Stipendium má restrikci, může být pouze 0-2000 -->
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0" />
+                                                    <xs:maxInclusive value="2000" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="fakulta">
+                                            <xs:simpleType>
+                                                <!-- Fakulta má restrikci, může být pouze z hodnot níže -->
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Provozně ekonomická fakulta" />
+                                                    <xs:enumeration value="Fakulta agrobiologie, potravinových a přírodních zdrojů" />
+                                                    <xs:enumeration value="Technická fakulta" />
+                                                    <xs:enumeration value="Fakulta životního prostředí" />
+                                                    <xs:enumeration value="Fakulta lesnická a dřevařská" />
+                                                    <xs:enumeration value="Fakulta tropického zemědělství" />
+                                                    <xs:enumeration value="Institut vzdělávání a poradenství" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="pohlavi">
+                                            <xs:simpleType>
+                                                <!-- Pohláví má restrikci, může být pouze z hodnot níže -->
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Muž" />
+                                                    <xs:enumeration value="Žena" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

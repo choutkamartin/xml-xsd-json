@@ -1,0 +1,29 @@
+<?xml-model href="data.xsd"?>
+<root>
+    <studenti>
+        <student>
+            <jmeno>Petr</jmeno>
+            <prijmeni>Svačina</prijmeni>
+            <vek>18</vek>
+            <stipendium>1000</stipendium>
+            <fakulta>Fakulta tropického zemědělství</fakulta>
+            <pohlavi>Muž</pohlavi>
+        </student>
+        <student>
+            <jmeno>Ondřej</jmeno>
+            <prijmeni>Novotný</prijmeni>
+            <vek>22</vek>
+            <stipendium>1500</stipendium>
+            <fakulta>Provozně ekonomická fakulta</fakulta>
+            <pohlavi>Muž</pohlavi>
+        </student>
+        <student>
+            <jmeno>Aneta</jmeno>
+            <prijmeni>Svojsíková</prijmeni>
+            <vek>20</vek>
+            <stipendium>2000</stipendium>
+            <fakulta>Technická fakulta</fakulta>
+            <pohlavi>Žena</pohlavi>
+        </student>
+    </studenti>
+</root>

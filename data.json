@@ -1,0 +1,28 @@
+{
+    "studenti": [
+        {
+            "jmeno": "Petr",
+            "prijmeni": "Svačina",
+            "vek": 18,
+            "stipendium": 1000,
+            "fakulta": "Fakulta tropického zemědělství",
+            "pohlavi": "Muž"
+        },
+        {
+            "jmeno": "Ondřej",
+            "prijmeni": "Novotný",
+            "vek": 22,
+            "stipendium": 1500,
+            "fakulta": "Provozně ekonomická fakulta",
+            "pohlavi": "Muž"
+        },
+        {
+            "jmeno": "Aneta",
+            "prijmeni": "Svojsíková",
+            "vek": 20,
+            "stipendium": 2000,
+            "fakulta": "Technická fakulta",
+            "pohlavi": "Žena"
+        }
+    ]
+}
